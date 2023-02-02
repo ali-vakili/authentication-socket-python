@@ -1,0 +1,80 @@
+:root {
+  --primary-color: #b26dee;
+  --primary-color-hover: #a460e0;
+}
+
+::selection {
+  color: #fff;
+  background-color: #c39ae4;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bc8ce6;
+  border-radius: 2px;
+}
+p {
+  font-weight: 400 !important;
+}
+.card-shadow {
+  box-shadow: 0px 10px 30px -16px rgba(195, 154, 228, 0.2);
+}
+.primary-color {
+  color: var(--primary-color) !important;
+}
+.input-border:focus {
+  border-color: var(--primary-color) !important;
+}
+.no-border {
+  border: none !important;
+}
+.btn-primary-color {
+  border: none;
+  background-color: var(--primary-color) !important;
+  transition: all 400ms ease-out;
+}
+.btn-primary-color:hover {
+  border: none;
+  background-color: var(--primary-color-hover) !important;
+}
+.misc-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - (1.625rem * 2));
+  text-align: center;
+}
+.hide-show {
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  height: 20px;
+  user-select: none;
+  background-size: cover;
+  cursor: pointer;
+}
+.show {
+  top: 9px;
+  content: url("../image/eye-off.svg");
+}
+.wrong-credentials-again {
+  animation: wrong-credentials 400ms ease alternate;
+}
+
+@keyframes wrong-credentials {
+  0% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
