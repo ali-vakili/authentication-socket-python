@@ -1,6 +1,6 @@
 # authentication-socket-python
 
-HTTP authentication user using socket
+HTTP user authentication using socket
 
 ## Guide
 
