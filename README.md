@@ -1,6 +1,6 @@
 # authentication-socket-python
 
-HTTP authentication user using socket
+HTTP user authentication using socket
 
 ## Guide
 
@@ -60,7 +60,7 @@ if __name__ == "__main__":
 'database.py'
 
 if __name__ == "__main__":
-    insert_row("{table_name}", "{ussername}", "{password}", {"student_code(number)"},
+    insert_row("{table_name}", "{username}", "{password}", {"student_code(number)"},
                "{first_name}", "{last_name}", {"grade(number)"}, "{field}")
 ```
 
